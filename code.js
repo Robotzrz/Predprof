@@ -5,11 +5,15 @@ document.addEventListener("DOMContentLoaded", function() {
 function createBoard() {
     const widthInput = document.getElementById("board-width");
     const heightInput = document.getElementById("board-height");
-    const quantityInput = document.getElementById("quantity-rooms");
+    const roomsInput = document.getElementById("quantity-rooms");
+    const windowsInput = document.getElementById("quantity-windows");
 
     boardWidth = parseInt(widthInput.value);
     boardHeight = parseInt(heightInput.value);
-    quantity_rooms = parseInt(quantityInput.value);
+    quantity_rooms = parseInt(roomsInput.value);
+    quantity_windows = parseInt(windowsInput.value);
+
+
 
     const boardContainer = document.getElementById("board-container");
     boardContainer.style.setProperty('--board-width', boardWidth);
